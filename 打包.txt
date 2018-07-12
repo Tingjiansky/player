@@ -1,0 +1,41 @@
+
+pyinstaller -F -w -i cat.ico player.py
+
+注意打包时是否有error，可能有部分import的内容未找到，需要自行指定
+
+-F 打包成一个文件
+
+-D 打包成一个文件夹
+
+-w 隐藏调试框
+
+-p 手动添加模块路径
+
+-i 加图标
+
+最好是以管理员权限运行cmd
+
+png转ico网站
+http://www.bitbug.net/
+
+
+
+-F, --onefile Py代码只有一个文件
+ 
+-D, --onedir Py代码放在一个目录中（默认是这个）
+ 
+-K, --tk 包含TCL/TK
+ 
+-d, --debug 生成debug模式的exe文件
+ 
+-w, --windowed, --noconsole 窗体exe文件(Windows Only)
+ 
+-c, --nowindowed, --console 控制台exe文件(Windows Only)
+ 
+-X, --upx 使用upx压缩exe文件
+ 
+-o DIR, --out=DIR 设置spec文件输出的目录，默认在PyInstaller同目录
+ 
+--icon=<FILE.ICO> 加入图标（Windows Only）
+ 
+-v FILE, --version=FILE 加入版本信息文件
